@@ -4,26 +4,33 @@ import Cepas from "./cepas.js";
 const btns = document.querySelectorAll('button[id^=vino]');
 btns.forEach(btn => {
    btn.addEventListener('click', event => {
-        console.log( event.target.id );
+        const idProducto = event.target.id.split("_")
+        agregaProducto(idProducto[1], 1);
    });
 });
 
-const nombreProducto = (idProducto) => {
+const nombreDetalleProducto = (idProducto) => {
     let producto = Catalogo.find(c => c.id == idProducto);
-    return producto.nombre;
+    return producto;
 }
 
 let agregaProducto = (codigoProducto, cantidad) => {
     let carroCompras = JSON.parse(localStorage.getItem('carro'));
     if(!carroCompras){
-        console.log("Carro vacio");
         carroCompras = [];
         carroCompras.push({codigoProducto : codigoProducto, cantidad: cantidad});
         localStorage.setItem('carro',  JSON.stringify(carroCompras));
+        console.log("Ha agregado", nombreDetalleProducto(codigoProducto).nombre, ' - Cantidad:', cantidad);
     }else{
-        carroCompras.push({codigoProducto : codigoProducto, cantidad: cantidad});
-        localStorage.setItem('carro',  JSON.stringify(carroCompras));
-    }    
+        let producto = carroCompras.find(c => c.codigoProducto == codigoProducto);
+        if(!producto){
+            carroCompras.push({codigoProducto : codigoProducto, cantidad: cantidad});
+            localStorage.setItem('carro',  JSON.stringify(carroCompras));
+            console.log("Ha agregado", nombreDetalleProducto(codigoProducto).nombre, ' - Cantidad:', cantidad);
+        }else{
+            console.log("El producto", nombreDetalleProducto(codigoProducto).nombre, 'ya se encuentra agregado');
+        }
+    }
 }
 
 const quitarProducto = (idProductoRem) => {
@@ -55,11 +62,11 @@ const obtieneCarroCompras = () => {
     });
     console.log(obtieneProductos);
     obtieneProductos.forEach((producto) => {
-        console.log(nombreProducto(producto.codigoProducto) + ' - Cantidad: ' + producto.cantidad);
+        console.log(nombreDetalleProducto(producto.codigoProducto).nombre + ' - Cantidad: ' + producto.cantidad);
     });
 }
+
 limpiaCarro();
-agregaProducto(4, 2);
-agregaProducto(1, 3);
+//agregaProducto(1, 3);
 //quitarProducto(4);
 obtieneCarroCompras();

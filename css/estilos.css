@@ -580,4 +580,10 @@ li a,
   align-self: center;
 }
 
+.caja_botones{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
 /*# sourceMappingURL=estilos.css.map */
