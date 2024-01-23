@@ -1,0 +1,583 @@
+/* APLICA ELEMENTOS PARTIALS SASS */
+@media (min-width: 300px) and (max-width: 999px) {
+  .footer .menu,
+  .footer .pago {
+    display: none;
+  }
+  .contenedor_categorias {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .main {
+    margin: 20px 40px;
+  }
+  .contenedor_ofertas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .marcas {
+    display: none;
+  }
+  .oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 0;
+  }
+  .header .menu,
+  .header .sesion {
+    display: none;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 2fr auto;
+  }
+  .breadcrumbs {
+    display: none;
+  }
+  .contenedor_categoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 15px;
+  }
+  .detalle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .detalle_carro {
+    display: grid;
+    grid-template-columns: 100px 1.5fr 20px;
+    gap: 30px;
+    padding: 20px 0;
+  }
+  .foto_producto_carro {
+    border: 2px #d9d9d9 solid;
+    position: relative;
+  }
+  .foto_producto_carro img {
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 20%;
+  }
+  .texto_producto_categoria {
+    min-height: 100px;
+  }
+  .cantidad_carro {
+    grid-area: cantidad_carro;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+  }
+  header .logo img {
+    width: 80%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .main {
+    margin: 20px 100px;
+  }
+  .navbar {
+    display: none;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  .contenedor_categorias {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .contenedor_ofertas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .detalle_carro {
+    display: grid;
+    grid-template-columns: 150px 2fr 50px;
+    gap: 30px;
+    padding: 20px 0;
+  }
+  .foto_producto_carro {
+    border: 2px #d9d9d9 solid;
+    padding: 15px;
+  }
+  .foto_producto_carro img {
+    height: auto;
+    max-width: 100%;
+  }
+  .contenedor_categoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 15px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0;
+  }
+  .oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1201px) {
+  .categoria_grilla {
+    display: grid;
+    grid-template-areas: "menu_categorias ofertas ofertas";
+  }
+  .contenedor_categorias,
+  .contenedor_ofertas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 30px;
+  }
+  .main {
+    margin: 30px 200px;
+  }
+  .oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0;
+  }
+  .navbar {
+    display: none;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+  .contenedor_categoria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 15px;
+  }
+  .detalle {
+    display: grid;
+    grid-template-areas: "foto_producto titulo" "foto_producto descripcion" "foto_producto precio" "foto_producto cantidad_carro";
+    gap: 30px;
+    padding: 10px 0;
+  }
+  .detalle_carro {
+    display: grid;
+    grid-template-columns: 150px 2fr 50px;
+    gap: 30px;
+    padding: 20px 0;
+  }
+  .foto_producto_carro {
+    border: 2px #d9d9d9 solid;
+    padding: 15px;
+  }
+  .foto_producto_carro img {
+    height: auto;
+    max-width: 100%;
+  }
+  .finalizar_compra {
+    width: 300px;
+    margin-left: auto;
+  }
+  .texto_producto {
+    min-height: 60px;
+  }
+  .texto_producto_categoria {
+    min-height: 60px;
+  }
+  .cantidad_carro {
+    grid-area: cantidad_carro;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  header .logo img {
+    width: 80%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.carrusel {
+  position: relative;
+}
+
+.marcas div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marcas div img {
+  width: 30%;
+}
+
+footer .menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 10px;
+}
+
+header .menu ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  flex-direction: row;
+}
+
+.wp,
+.ml,
+header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* APLICA ELEMENTOS ANIDADOS SASS */
+footer .logo,
+footer .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto_carrusel h1 {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-right: 50px;
+  left: 0;
+  padding: 30px;
+  text-align: center;
+}
+
+.ml img, .wp img {
+  width: 80%;
+}
+
+.rrss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.marcas div {
+  display: flex;
+  justify-content: center;
+}
+
+.sesion {
+  display: flex;
+  flex-flow: row;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+
+li a,
+.principal {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.img_carrusel {
+  background-image: url("../img/vineyard.png");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: brightness(30%);
+}
+
+.caja_categoria {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  background-color: #ac9760;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.texto_precio {
+  padding: 10px 0;
+}
+
+.caja_producto {
+  position: relative;
+  z-index: 2;
+  color: white;
+  background-color: #ac9760;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+}
+
+.boton_agregar_carro {
+  position: relative;
+  z-index: 2;
+  color: white;
+  background-color: #344054;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  font-size: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.boton_quitar_carro {
+  position: relative;
+  z-index: 2;
+  color: white;
+  background-color: #d50404;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  font-size: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.contenedor_categorias img {
+  width: 100%;
+}
+
+.texto_seccion span h4,
+.detalle .titulo span h5 {
+  font-weight: 900;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.texto_seccion,
+.breadcrumbs {
+  position: relative;
+  padding: 20px 0;
+}
+
+.breadcrumbs a {
+  color: black;
+  font-size: 15px;
+}
+
+.texto_producto, .texto_producto_categoria {
+  font-weight: 900;
+  font-size: 12px;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.elementos_producto .precio {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.elementos_producto .titulo {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.container.h-100 {
+  padding: 40px 0;
+}
+
+.slider {
+  height: 75pt;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  user-select: none;
+  touch-action: none;
+}
+
+.slider .slide-track-1 {
+  /*animation: scroll-l 30s linear infinite;*/
+  display: flex;
+  width: 100%;
+}
+
+.slider .slide {
+  height: 75pt;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.slider .slide img {
+  width: 180px;
+  padding: 1pc;
+  vertical-align: middle;
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes scroll-l {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1520px;
+  }
+}
+.menu_categoria {
+  grid-area: menu_categorias;
+  padding: 20px 0;
+  width: 85%;
+}
+
+.ofertas {
+  grid-area: ofertas;
+}
+
+.breadcrumbs {
+  grid-area: breadcrumbs;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.marcas {
+  grid-area: marcas;
+}
+
+.list-group {
+  padding: 0;
+  overflow: hidden;
+}
+
+.list-group {
+  margin-bottom: 0;
+}
+
+.list-group .list-group-item {
+  border-radius: 0;
+  border-width: 1px 0 0 0;
+  font-size: 15px;
+}
+
+.list-group > .list-group-item:first-child {
+  border-top-width: 0;
+}
+
+.list-group > .list-group > .list-group-item {
+  padding-left: 30px;
+}
+
+#quantity {
+  width: 40px;
+}
+
+.elementos_producto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.foto_producto {
+  grid-area: foto_producto;
+  border: 2px #d9d9d9 solid;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto_producto img {
+  height: auto;
+  max-width: 100%;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.descripcion {
+  grid-area: descripcion;
+}
+
+.precio {
+  grid-area: precio;
+}
+
+.boton_quitar {
+  align-items: center;
+  display: flex;
+}
+
+.cantidad {
+  display: flex;
+  align-self: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */

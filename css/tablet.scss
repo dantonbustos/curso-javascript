@@ -1,0 +1,57 @@
+@media (min-width: 1000px) and (max-width: 1200px){
+    .main {
+      margin: 20px 100px;
+    }
+    .navbar {
+      display: none;
+    }
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1fr;
+    }
+    header .logo img {
+      width: 100%;
+    }
+    .contenedor_categorias {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+    }
+    .contenedor_ofertas {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .detalle_carro {
+      display: grid;
+      grid-template-columns: 150px 2fr 50px;
+      gap: 30px;
+      padding: 20px 0;
+    }
+    .foto_producto_carro {
+      border: 2px #d9d9d9 solid;
+      padding: 15px;
+    }
+    .foto_producto_carro img {
+      height: auto;
+      max-width: 100%;
+    }
+    .contenedor_categoria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+      gap: 15px;
+    }
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 40px 0;
+    }
+    .oferta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  }
+  
