@@ -5,7 +5,7 @@ const Catalogo = [
         cepa: 2,
         vina: 3,
         precio: 9900,
-        imagen: '/img/vino_01.png'
+        imagen: '../img/vino_01.png'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const Catalogo = [
         cepa: 2,
         vina: 3,
         precio: 6600,
-        imagen: '/img/vino_03.png'
+        imagen: '../img/vino_03.png'
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const Catalogo = [
         cepa: 2,
         vina: 3,
         precio: 7500,
-        imagen: '/img/Vino-Diablo-Black-Cabernet-Sauvignon.jpg'
+        imagen: '../img/Vino-Diablo-Dark-Red-1.jpg'
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const Catalogo = [
         cepa: 2,
         vina: 3,
         precio: 4800,
-        imagen: '/img/vino_03.png'
+        imagen: '../img/Vino-Diablo-Black-Cabernet-Sauvignon.jpg'
     },
     {
         id: 5,
