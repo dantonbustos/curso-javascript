@@ -11,7 +11,7 @@ export default class Productos {
         this.cantidad = cantidad + 1;
     }
     detalleProducto = async (idProducto) => {
-        const dataProducto = await fetch("../js/reds.json")
+        const dataProducto = await fetch("https://dantonbustos.github.io/curso-javascript/js/reds.json")
         .then( response => response.json())
         .then( data => {
             return data;
@@ -137,7 +137,7 @@ export default class Productos {
     obtieneProductosCategoria = (cantidad, claseContenedora) => {
         let l = 0;
         let limite = cantidad > 0?cantidad:99999999;
-        fetch("../js/reds.json")
+        fetch("https://dantonbustos.github.io/curso-javascript/js/reds.json")
         .then( response => response.json())
         .then( data => {
             data.forEach((d) => {
