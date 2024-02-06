@@ -61,12 +61,14 @@
   .foto_producto_carro {
     border: 2px #d9d9d9 solid;
     position: relative;
+    padding: 15px;
+    text-align: center;
   }
   .foto_producto_carro img {
     height: auto;
-    max-width: 100%;
-    position: absolute;
-    top: 20%;
+    width: auto;
+    max-width: 300px;
+    max-height: 100px;
   }
   .texto_producto_categoria {
     min-height: 100px;
@@ -117,11 +119,15 @@
   }
   .foto_producto_carro {
     border: 2px #d9d9d9 solid;
+    position: relative;
     padding: 15px;
+    text-align: center;
   }
   .foto_producto_carro img {
     height: auto;
-    max-width: 100%;
+    width: auto;
+    max-width: 300px;
+    max-height: 100px;
   }
   .contenedor_categoria {
     display: grid;
@@ -197,17 +203,22 @@
   }
   .foto_producto_carro {
     border: 2px #d9d9d9 solid;
+    position: relative;
     padding: 15px;
+    text-align: center;
   }
   .foto_producto_carro img {
     height: auto;
-    max-width: 100%;
+    width: auto;
+    max-width: 300px;
+    max-height: 100px;
+  }
   }
   .finalizar_compra {
     width: 400px;
     margin-left: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 5px;
   }
   .texto_producto {
@@ -328,7 +339,7 @@ li a,
 .img_carrusel {
   background-image: url("../img/vineyard.png");
   background-color: #cccccc;
-  height: 500px;
+  height: 350px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,6 +409,7 @@ li a,
   border-radius: 5px;
   text-decoration: none;
   border: none;
+  height: 15%;
 }
 
 .contenedor_categorias img {
@@ -569,6 +581,7 @@ li a,
 .foto_producto img {
   height: auto;
   max-width: 100%;
+  max-height: 200px;
 }
 
 .titulo {
@@ -599,4 +612,11 @@ li a,
   gap: 5px;
 }
 
+.deshab {
+  color: #d2d2d2;
+}
+
+.caja_cantidad{
+  width: 50px;
+}
 /*# sourceMappingURL=estilos.css.map */

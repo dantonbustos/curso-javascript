@@ -38,12 +38,12 @@
           </div>
           <nav class="menu">
             <ul>
-              <li><a href="index.html">Inicio</a></li>
+              <li><a href="../index.html">Inicio</a></li>
               <li><a href="pages/categorias.html">Tintos</a></li>
-              <li><a href="pages/categorias.html">Blancos</a></li>
-              <li><a href="pages/categorias.html">Ensamblajes</a></li>
-              <li><a href="pages/categorias.html">Espumantes</a></li>
-              <li><a href="pages/categorias.html">Contacto</a></li>
+              <li><a href="#" class="deshab">Blancos</a></li>
+              <li><a href="#" class="deshab">Ensamblajes</a></li>
+              <li><a href="#" class="deshab">Espumantes</a></li>
+              <li><a href="#" class="deshab">Contacto</a></li>
             </ul>
           </nav>
           <div class="sesion">
@@ -52,10 +52,10 @@
                 ><img src="img/shopping_cart.png" alt=""
               /></a>
             </div>
-            <div><span>0</span></div>
-            <div>
-              <a href="#"><img src="img/person_outline.png" alt="" /></a>
-            </div>
+            <div id="cantidadCarro"></div>
+            <!--div>
+              <a href="#"><img src="../img/person_outline.png" alt="" /></a>
+            </div-->
           </div>
           <div class="navbar navbar-light bg-white">
             <button
@@ -133,91 +133,11 @@
             <div class="caja_categoria">Espumantes</div>
             <img src="img/espumante.png" alt="" />
           </a>
-          <a href="pages/categorias.html">
-            <div class="caja_categoria">tintos</div>
-            <img src="img/tintos.png" alt="" />
-          </a>
-          <a href="pages/categorias.html">
-            <div class="caja_categoria">blancos</div>
-            <img src="img/blancos.png" alt="" />
-          </a>
-          <a href="pages/categorias.html">
-            <div class="caja_categoria">Ensamblajes</div>
-            <img src="img/ensamblaje.png" alt="" />
-          </a>
-          <a href="pages/categorias.html">
-            <div class="caja_categoria">Espumantes</div>
-            <img src="img/espumante.png" alt="" />
-          </a>
         </div>
       </section>
       <section class="ofertas">
         <div class="texto_seccion"><span><h4>Ofertas Destacadas</h4></span></div>
-        <div class="contenedor_ofertas">
-          <div class="oferta">
-            <div class="foto_producto">
-              <img src="img/vino_01.png" alt="" />
-            </div>
-            <p class="texto_producto"
-              >Vino Orgánico Veramonte Reserva Cepas</p
-            >
-            <div class="texto_precio">
-              <span class="texto">Precio:</span>
-              <span class="precio">$6.570</span>
-            </div>
-            <div class="caja_botones">
-              <a href="pages/detalle.html" class="caja_producto">ver</a>
-              <button id="vino_1" class="caja_producto">agregar</button>
-            </div>          </div>
-          <div class="oferta">
-            <div class="foto_producto">
-              <img src="img/vino_01.png" alt="" />
-            </div>
-            <p class="texto_producto"
-              >Vino Veramonte Reserva Cepas Varias</p
-            >
-            <div class="texto_precio">
-              <span class="texto">Precio:</span>
-              <span class="precio">$6.570</span>
-            </div>
-            <div class="caja_botones">
-              <a href="pages/detalle.html" class="caja_producto">ver</a>
-              <button id="vino_2" class="caja_producto">agregar</button>
-            </div>
-          </div>
-          <div class="oferta">
-            <div class="foto_producto">
-              <img src="img/Vino-Diablo-Dark-Red-1.jpg" alt="" />
-            </div>
-            <p class="texto_producto"
-              >Diablo Red Blend</p
-            >
-            <div class="texto_precio">
-              <span class="texto">Precio:</span>
-              <span class="precio">$6.570</span>
-            </div>
-            <div class="caja_botones">
-              <a href="pages/detalle.html" class="caja_producto">ver</a>
-              <button id="vino_3" class="caja_producto">agregar</button>
-            </div>
-          </div>
-          <div class="oferta">
-            <div class="foto_producto">
-              <img src="img/Vino-Diablo-Black-Cabernet-Sauvignon.jpg" alt="" />
-            </div>
-            <p class="texto_producto"
-              >Diablo Cabernet Sauvignon</p
-            >
-            <div class="texto_precio">
-              <span class="texto">Precio:</span>
-              <span class="precio">$6.570</span>
-            </div>
-            <div class="caja_botones">
-              <a href="pages/detalle.html" class="caja_producto">ver</a>
-              <button id="vino_4" class="caja_producto">agregar</button>
-            </div>
-          </div>
-        </div>
+        <div class="contenedor_ofertas"></div>
       </section>
 
       <section class="marcas">
@@ -271,10 +191,10 @@
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="pages/categorias.html">Tintos</a></li>
-            <li><a href="pages/categorias.html">Blancos</a></li>
-            <li><a href="pages/categorias.html">Ensamblajes</a></li>
-            <li><a href="pages/categorias.html">Espumantes</a></li>
-            <li><a href="pages/categorias.html">Contacto</a></li>
+            <li><a class="deshab" href="#">Blancos</a></li>
+            <li><a class="deshab" href="#">Ensamblajes</a></li>
+            <li><a class="deshab" href="#">Espumantes</a></li>
+            <li><a class="deshab" href="#">Contacto</a></li>
           </ul>
         </div>
         <div class="pago">
@@ -301,7 +221,7 @@
         </div>
       </footer>
     </main>
-    <script src="/js/main.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>

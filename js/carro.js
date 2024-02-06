@@ -11,3 +11,4 @@ vaciaCarro.addEventListener('click', function() {
 
 const iniciaProductos = new Productos();
 iniciaProductos.obtieneCarroCompras();
+iniciaProductos.obtieneResumenCarro();
